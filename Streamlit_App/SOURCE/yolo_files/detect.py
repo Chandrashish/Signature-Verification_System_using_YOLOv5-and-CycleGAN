@@ -17,7 +17,7 @@ from SOURCE.yolo_files.utils.torch_utils import select_device, load_classifier, 
 
 def detect(image_path, proj_path = 'results/yolov5/'):
     opt = {
-    'weights': 'SOURCE/yolo_files/best.pt',
+    'weights': '/content/drive/Shareddrives/DataScience/Signature_Detection_From_images/best.pt',
     'source': image_path,
     'img_size': 640,
     'conf_thres': 0.25,
