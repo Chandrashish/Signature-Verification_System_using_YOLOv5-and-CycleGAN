@@ -15,7 +15,7 @@ from SOURCE.yolo_files.utils.plots import colors, plot_one_box
 from SOURCE.yolo_files.utils.torch_utils import select_device, load_classifier, time_synchronized
 
 
-def detect(image_path):
+def detect(image_path, proj_path = 'results/yolov5/'):
     opt = {
     'weights': 'SOURCE/yolo_files/best.pt',
     'source': image_path,
@@ -32,7 +32,7 @@ def detect(image_path):
     'agnostic_nms': False,
     'augment': False,
     'update': False,
-    'project': 'results/yolov5/',
+    'project': proj_path, #'results/yolov5/',
     'name': 'exp',
     'exist_ok': False,
     'line_thickness': 3,
