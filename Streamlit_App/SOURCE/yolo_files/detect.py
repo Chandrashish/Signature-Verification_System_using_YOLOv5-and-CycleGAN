@@ -23,7 +23,7 @@ def detect(image_path, proj_path = 'results/yolov5/'):
     'conf_thres': 0.25,
     'iou_thres': 0.45,
     'device': '',
-    'view_img': False,
+    'view_img': True,
     'save_txt': True,
     'save_conf': True,
     'save_crop': True,
