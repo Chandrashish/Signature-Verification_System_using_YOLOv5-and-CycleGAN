@@ -6,6 +6,7 @@ import cv2
 import torch
 import torch.backends.cudnn as cudnn
 from numpy import random
+from google.colab.patches import cv2_imshow
 
 from SOURCE.yolo_files.models.experimental import attempt_load
 from SOURCE.yolo_files.utils.datasets import LoadStreams, LoadImages
@@ -23,7 +24,7 @@ def detect(image_path, proj_path = 'results/yolov5/'):
     'conf_thres': 0.25,
     'iou_thres': 0.45,
     'device': '',
-    'view_img': True,
+    'view_img': False,
     'save_txt': True,
     'save_conf': True,
     'save_crop': True,
